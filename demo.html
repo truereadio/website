@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TrueRead — Request a demo</title>
+<meta name="description" content="Tell us about the business. We'll send back a tailored demo. 30 minutes, no deck."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap"/>
+<link rel="icon" type="image/png" href="assets/favicon.png"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="reading" style="--wm:20px;width:118px" aria-label="TrueRead home"><span class="word">TrueRead</span><span class="needle-rule"></span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="product.html">Product</a>
+      <a class="nav-link" href="customers.html">Customers</a>
+      <a class="nav-link" href="pricing.html">Pricing</a>
+      <a class="nav-link" href="#">Log in</a>
+      <a class="btn-primary" href="demo.html">Request a demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu"><a href="product.html">Product</a><a href="customers.html">Customers</a><a href="pricing.html">Pricing</a><a href="#">Log in</a><a class="btn-primary" href="demo.html">Request a demo</a></div>
+</nav>
+
+<section class="wrap" style="padding:120px 64px 140px">
+  <div class="demo-grid" style="display:grid;grid-template-columns:1.1fr 1fr;gap:100px;align-items:flex-start">
+    <div style="padding-top:12px">
+      <div class="eyebrow" style="margin-bottom:32px">Request a demo</div>
+      <h1 style="font-size:54px;line-height:1.04;max-width:520px">Tell us about the business.<br/><span class="serif-italic" style="font-size:inherit">We'll send back a tailored demo.</span></h1>
+      <p class="lede" style="margin-top:32px;max-width:460px">A 30-minute walkthrough, run on a dataset that resembles a business of your shape. No deck.</p>
+      <div style="margin-top:64px;display:flex;flex-direction:column;gap:22px;max-width:420px">
+        <div style="display:grid;grid-template-columns:14px 1fr;gap:18px;align-items:flex-start"><span style="width:1.5px;height:14px;background:var(--cyan);margin-top:6px"></span><div><div style="font-family:var(--sans);font-size:14px;color:var(--ink);font-weight:500;margin-bottom:4px">30-minute demo</div><p class="muted" style="font-size:13px;line-height:1.5">Calendar-blockable. We start on time, we finish on time.</p></div></div>
+        <div style="display:grid;grid-template-columns:14px 1fr;gap:18px;align-items:flex-start"><span style="width:1.5px;height:14px;background:var(--cyan);margin-top:6px"></span><div><div style="font-family:var(--sans);font-size:14px;color:var(--ink);font-weight:500;margin-bottom:4px">No deck</div><p class="muted" style="font-size:13px;line-height:1.5">We open TrueRead. You ask questions. We answer them.</p></div></div>
+        <div style="display:grid;grid-template-columns:14px 1fr;gap:18px;align-items:flex-start"><span style="width:1.5px;height:14px;background:var(--cyan);margin-top:6px"></span><div><div style="font-family:var(--sans);font-size:14px;color:var(--ink);font-weight:500;margin-bottom:4px">Run on your actual data, with your permission</div><p class="muted" style="font-size:13px;line-height:1.5">If a follow-up call is useful, we'll wire up a read of your last twelve months. Only if you ask for it.</p></div></div>
+      </div>
+      <div style="margin-top:80px"><div class="needle left"></div></div>
+    </div>
+
+    <div id="form-wrap" style="background:var(--paper);border:1px solid var(--rule);padding:48px 48px 44px">
+      <div class="caption" style="margin-bottom:28px">Five fields · no phone required</div>
+      <form id="demo-form" style="display:flex;flex-direction:column;gap:32px" novalidate>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" placeholder="Owner or operator" data-required/><span class="err-msg">Tell us who you are.</span></div>
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" type="email" placeholder="you@yourcompany.com" data-required/><span class="err-msg">A valid work email, please.</span></div>
+        <div class="field"><label for="f-co">Company</label><input id="f-co" type="text" placeholder="Legal or doing-business-as" data-required/><span class="err-msg">Which business?</span></div>
+        <div class="field"><label for="f-rev">Annual revenue band</label><select id="f-rev" data-required><option value="" disabled selected>Select a band</option><option>Under $2M</option><option>$2M – $10M</option><option>$10M – $25M</option><option>$25M – $50M</option><option>$50M+</option></select><span class="err-msg">Pick a revenue band.</span></div>
+        <div class="field"><label for="f-trade">Primary trade</label><select id="f-trade" data-required><option value="" disabled selected>Select a trade</option><option>Residential roofing</option><option>Commercial roofing</option><option>Exteriors (siding, gutters, windows)</option><option>HVAC &amp; mechanical</option><option>Plumbing</option><option>Electrical</option><option>Other trade</option></select><span class="err-msg">Pick your primary trade.</span></div>
+        <button class="btn-primary" type="submit" style="margin-top:20px;align-self:flex-start;padding:14px 28px">Send the request →</button>
+        <p class="muted" style="font-size:12px;margin-top:4px">We'll reply by end of day from a human. No marketing follow-ups.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div><a href="index.html" class="reading" style="--wm:20px;width:118px"><span class="word">TrueRead</span><span class="needle-rule"></span></a><p class="muted" style="margin-top:18px;max-width:240px;line-height:1.5">The central data hub for contracting businesses.</p></div>
+      <div><h5>Product</h5><ul><li><a href="product.html">What you see</a></li><li><a href="product.html#integrations">Integrations</a></li><li><a href="#">Security</a></li><li><a href="#">Changelog</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="customers.html">Customers</a></li><li><a href="#">Careers</a></li><li><a href="demo.html">Contact</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="#">Field notes</a></li><li><a href="#">The Operator's Brief</a></li><li><a href="index.html#the-picture">Sample dashboard</a></li><li><a href="#">Help</a></li></ul></div>
+      <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Data processing</a></li></ul></div>
+    </div>
+    <div class="tagline"><span>A true read on the situation.</span><span class="monogram"><span class="frame">TR</span><span class="tick"></span></span></div>
+    <div class="copy-row"><span class="copy">© 2026 TrueRead, Inc.</span><span class="copy">Built in the Midwest. Used everywhere.</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

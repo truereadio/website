@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="920" height="300" role="img" aria-label="TrueRead">
+  
+  <text x="40" y="190" font-family="Inter, &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif" font-weight="600" font-size="180" letter-spacing="-4" textLength="840" lengthAdjust="spacing" fill="#F4F1EC">TrueRead</text>
+  <line x1="40" y1="252" x2="880" y2="252" stroke="#F4F1EC" stroke-opacity="0.3" stroke-width="2"></line>
+  <line x1="384" y1="234" x2="384" y2="270" stroke="#0F5866" stroke-width="4"></line>
+</svg>
